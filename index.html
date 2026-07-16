@@ -53,13 +53,38 @@
     }
 
     .nav-logo {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .nav-logo-mark {
+      width: 28px;
+      height: 28px;
+      background: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
       font-family: var(--sans);
-      font-size: 0.8rem;
+      font-size: 0.65rem;
       font-weight: 500;
-      letter-spacing: 0.12em;
+      color: #0f0f0f;
+      letter-spacing: 0.02em;
+      flex-shrink: 0;
+    }
+
+    .nav-logo-text {
+      font-family: var(--sans);
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.14em;
       text-transform: uppercase;
       color: var(--text);
-      text-decoration: none;
+    }
+
+    .nav-logo-text span {
+      color: var(--accent);
     }
 
     .nav-links {
@@ -280,7 +305,10 @@
     <!-- NAV -->
     <nav>
       <div class="nav-inner">
-        <a class="nav-logo" href="#">Xantus</a>
+        <a class="nav-logo" href="#">
+          <div class="nav-logo-mark">XO</div>
+          <span class="nav-logo-text">XANTUS<span>OFFICIAL</span></span>
+        </a>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
@@ -296,11 +324,6 @@
         Senior Network &amp;<br />
         <em>Cybersecurity Engineer</em>
       </h1>
-      <p class="hero-body">
-        I design, build, and secure enterprise-grade networks from the ground up:
-        firewalls, cloud architecture, or a brand-new facility network.
-        Based wherever the work takes me.
-      </p>
     </section>
 
     <!-- ABOUT -->
